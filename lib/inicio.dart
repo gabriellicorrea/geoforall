@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teste/geohumana.dart';
 
 class Inicio extends StatelessWidget {
   @override
@@ -24,32 +25,18 @@ class Inicio extends StatelessWidget {
                 Container(
                   child: Column(
                     children: <Widget>[
-                      SizedBox(
-                        width: 200,
-                        height: 200,
-                        child: Image.asset("imagens/cadeado.jpg"),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
                       Text(
-                        "Esqueceu sua senha?",
+                        "Escolha um tema para iniciar o quiz",
                         style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 20,
                       ),
-                      Text(
-                        "ola!!!!!!!!!!!!!!!!",
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w400,
-                        ),
-                        textAlign: TextAlign.center,
-                      )
+                      
+                      
                     ],
                   ),
                 ),
@@ -57,21 +44,7 @@ class Inicio extends StatelessWidget {
                   width: double.infinity,
                   child: Column(
                     children: <Widget>[
-                      TextFormField(
-                        keyboardType: TextInputType.emailAddress,
-                        decoration: InputDecoration(
-                          labelText: "E-mail",
-                          labelStyle: TextStyle(
-                            color: Colors.black38,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 20,
-                          ),
-                        ),
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
+                      
                       Container(
                         height: 60,
                         alignment: Alignment.centerLeft,
@@ -84,7 +57,7 @@ class Inicio extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Enviar",
+                              "Geografia Humana",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -93,17 +66,55 @@ class Inicio extends StatelessWidget {
                               textAlign: TextAlign.center,
                             ),
                             onPressed: () {
-                              return showDialog(
-                                context: context,
-                                builder: (context) {
-                                  return AlertDialog(
-                                    content: Text("Email Enviado"),
-                                  );
-                                },
-                              );
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana(),
+                              ),
+                            );
                             },
                           ),
+                          
                         ),
+                        
+                      ),
+
+                    SizedBox(
+                        height: 20,
+                      ),
+
+                      Container(
+                        height: 60,
+                        alignment: Alignment.centerLeft,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(5),
+                          ),
+                        ),
+                        child: SizedBox.expand(
+                          child: FlatButton(
+                            child: Text(
+                              "Geografia Politica",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Inicio(),
+                              ),
+                            );
+                            },
+                          ),
+                          
+                        ),
+                        
                       ),
                       SizedBox(
                         height: 20,

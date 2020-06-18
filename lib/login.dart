@@ -86,7 +86,7 @@ class _LoginState extends State<Login> {
                 ),
                 Container(
                   child: SizedBox(
-                    //rchild: Image.asset("images/geoo.JPG"),
+                    
                     height: 28,
                     width: 28,
                   ),
