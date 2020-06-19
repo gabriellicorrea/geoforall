@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teste/geopoli.dart';
+import 'package:teste/sair.dart';
 
 import 'geohumana/geohumana1.dart';
 
@@ -80,7 +81,7 @@ class Inicio extends StatelessWidget {
                         ),
                         
                       ),
-
+                    
                     SizedBox(
                         height: 20,
                       ),
@@ -118,8 +119,42 @@ class Inicio extends StatelessWidget {
                         ),
                         
                       ),
+                      
                       SizedBox(
-                        height: 20,
+                        height: 350,
+                      ),
+                      Container(
+                        height: 60,
+                        alignment: Alignment.centerLeft,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(5),
+                          ),
+                        ),
+                        child: SizedBox.expand(
+                          child: FlatButton(
+                            child: Text(
+                              "Sair",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Sair(),
+                              ),
+                            );
+                            },
+                          ),
+                          
+                        ),
+                        
                       ),
                     ],
                   ),

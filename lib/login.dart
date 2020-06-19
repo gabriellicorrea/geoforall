@@ -138,7 +138,16 @@ class _LoginState extends State<Login> {
                 ),
               ],
             ),
-            onPressed: () => {},
+            onPressed: ()  {
+              return showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          content: Text("Voce sera redirecionado para se cadastrar com o faebook."),
+                        );
+                      },
+                    );
+            },
           ),
         ),
       ),
