@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:teste/geohumana.dart';
+import 'package:teste/geopoli.dart';
+
+import 'geohumana/geohumana1.dart';
 
 class Inicio extends StatelessWidget {
   @override
@@ -69,7 +71,7 @@ class Inicio extends StatelessWidget {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Geohumana(),
+                                builder: (context) => Geohumana1(),
                               ),
                             );
                             },
@@ -107,7 +109,7 @@ class Inicio extends StatelessWidget {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Inicio(),
+                                builder: (context) => Geopoli(),
                               ),
                             );
                             },
