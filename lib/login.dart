@@ -64,32 +64,25 @@ class _LoginState extends State<Login> {
     final buttonLogin = ButtonTheme(
       child: Container(
         height: 60,
-        alignment: Alignment.centerLeft,
+        alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: Color(0xFFFFAB91),
           borderRadius: BorderRadius.all(
             Radius.circular(10),
           ),
         ),
-        child: SizedBox.expand(
+        padding: const EdgeInsets.all(12),
           child: FlatButton(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: Column(
+              
               children: <Widget>[
                 Text(
                   "Login",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 22,
+                    fontSize: 23,
                   ),
-                  textAlign: TextAlign.left,
-                ),
-                Container(
-                  child: SizedBox(
-                    
-                    height: 28,
-                    width: 28,
-                  ),
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),
@@ -102,57 +95,11 @@ class _LoginState extends State<Login> {
               );
             },
           ),
-        ),
+        
       ),
     );
 
-    final fbLogin = ButtonTheme(
-      child: Container(
-        height: 60,
-        alignment: Alignment.centerLeft,
-        decoration: BoxDecoration(
-          color: Color(0xFF3C5A99),
-          borderRadius: BorderRadius.all(
-            Radius.circular(10),
-          ),
-        ),
-        child: SizedBox.expand(
-          child: FlatButton(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text(
-                  "Login com Facebook",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),
-                  textAlign: TextAlign.left,
-                ),
-                Container(
-                  child: SizedBox(
-                    child: Image.asset("images/face.png"),
-                    height: 28,
-                    width: 28,
-                  ),
-                ),
-              ],
-            ),
-            onPressed: ()  {
-              return showDialog(
-                      context: context,
-                      builder: (context) {
-                        return AlertDialog(
-                          content: Text("Voce sera redirecionado para se cadastrar com o faebook."),
-                        );
-                      },
-                    );
-            },
-          ),
-        ),
-      ),
-    );
-
+    
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
@@ -162,20 +109,45 @@ class _LoginState extends State<Login> {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 128,
-                width: 128,
-                child: Image.asset("images/geoo.JPG", fit: BoxFit.contain),
+                height: 70,
               ),
+            Text(
+                  "Geo For All",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFFF7043),
+                    fontSize: 50,
+                  ),
+                  textAlign: TextAlign.center,
+                  ),
+              
+              SizedBox(
+                height: 90,
+              ),
+              
               SizedBox(height: 10),
               emailField,
               SizedBox(height: 20),
               senhaField,
+              
+              SizedBox(
+                height: 40,
+              ),
+              buttonLogin,
+              SizedBox(
+                height: 10,
+              ),
               Container(
                 height: 40,
-                alignment: Alignment.centerRight,
+                alignment: Alignment.center,
                 child: FlatButton(
                   child: Text(
-                    "Recuperar Senha",
+                    "Esqueci minha senha.",
+                    style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
                     textAlign: TextAlign.right,
                   ),
                   onPressed: () {
@@ -188,21 +160,19 @@ class _LoginState extends State<Login> {
                   },
                 ),
               ),
+              
               SizedBox(
-                height: 30,
-              ),
-              buttonLogin,
-              SizedBox(
-                height: 30,
-              ),
-              fbLogin,
-              SizedBox(
-                height: 10,
+                height: 100,
               ),
               Container(
                 child: FlatButton(
                   child: Text(
                     "Cadastre-se",
+                    style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
                     textAlign: TextAlign.center,
                   ),
                   onPressed: () => {
@@ -215,9 +185,11 @@ class _LoginState extends State<Login> {
                   },
                 ),
               ),
+              
             ],
           ),
         ),
+        
       ),
       backgroundColor: Colors.white,
     );

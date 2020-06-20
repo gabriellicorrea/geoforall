@@ -25,18 +25,34 @@ class Inicio extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+                 SizedBox(
+                height: 10,
+              ),
+            Text(
+                  "Geo For All",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFFF7043),
+                    fontSize: 50,
+                  ),
+                  textAlign: TextAlign.center,
+                  ),
+              
+              SizedBox(
+                height: 70,
+              ),
                 Container(
                   child: Column(
                     children: <Widget>[
                       Text(
-                        "Escolha um tema para iniciar o quiz",
+                        "Escolha um tema para iniciar",
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 22,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 50,
                       ),
                       
                       
@@ -52,7 +68,7 @@ class Inicio extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -90,7 +106,7 @@ class Inicio extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                         color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -121,13 +137,14 @@ class Inicio extends StatelessWidget {
                       ),
                       
                       SizedBox(
-                        height: 350,
+                        height: 150,
                       ),
                       Container(
                         height: 60,
+                        width: 80,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFF8A65),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
