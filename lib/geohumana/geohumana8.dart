@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teste/geohumana/geohumana7.dart';
 import 'package:teste/geohumana/geohumana9.dart';
 
 import '../inicio.dart';
@@ -32,16 +33,25 @@ class Geohumana8 extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Container(
+               Container(
                   child: Column(
                     children: <Widget>[
-                       SizedBox(
-                        width: 200,
-                        height: 200,
-                        child: Image.asset("images/geoo.JPG"),
-                      ),
-                      Text(
-                        "6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                SizedBox(
+                height: 70,
+              ),
+            Text(
+                  "Geo For All",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFFF7043),
+                    fontSize: 50,
+                  ),
+                  textAlign: TextAlign.center,
+                  ),
+              SizedBox(
+                height: 20,
+              ),       Text(
+                        "8. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -54,7 +64,7 @@ class Geohumana8 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Color(0xFFFF8A65),
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -92,7 +102,7 @@ class Geohumana8 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Color(0xFFFF8A65),
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -128,7 +138,7 @@ class Geohumana8 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Color(0xFFFF8A65),
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -166,7 +176,7 @@ class Geohumana8 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -204,9 +214,31 @@ class Geohumana8 extends StatelessWidget {
                                    SizedBox(
                         height: 50,
                       ),
-                     Container(
-                        height: 60,
-                        width: 80,
+                      Container(
+                        child: Row(
+                    children: <Widget>[
+                                   SizedBox(
+                        width: 10,
+                      ),
+        IconButton(
+          icon: Icon(Icons.arrow_back),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana7(),
+                              ),
+                            );
+                            },
+        ),
+        SizedBox(
+                        width: 65,
+                      ),
+
+                      Container(
+                        height: 40,
+                        width: 70,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
                           color: Color(0xFFFF8A65),
@@ -238,6 +270,25 @@ class Geohumana8 extends StatelessWidget {
                         ),
                         
                       ),
+                 SizedBox(
+                        width: 70,
+                      ),
+        IconButton(
+          icon: Icon(Icons.arrow_forward),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana9(),
+                              ),
+                            );
+                            },
+        ),
+                    ],),
+                 
+                )
+
               ],
             )
           ],

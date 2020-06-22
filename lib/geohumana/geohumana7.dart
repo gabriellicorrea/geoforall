@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teste/geohumana/geohumana6.dart';
 import 'package:teste/geohumana/geohumana8.dart';
 
 import '../inicio.dart';
@@ -206,42 +207,67 @@ class Geohumana7 extends StatelessWidget {
               ],
             )
            ),
-                         SizedBox(
-                        height: 10,
+                             SizedBox(
+                        height: 50,
                       ),
-                     
                       Container(
                         child: Row(
                     children: <Widget>[
-                          IconButton(
+                                   SizedBox(
+                        width: 10,
+                      ),
+        IconButton(
           icon: Icon(Icons.arrow_back),
           color: Colors.black38,
            onPressed: () {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Geohumana8(),
+                                builder: (context) => Geohumana6(),
                               ),
                             );
                             },
         ),
         SizedBox(
-                        width: 80,
+                        width: 65,
                       ),
-                        IconButton(
-          icon: Icon(Icons.power_settings_new),
-          color: Colors.black38,
-           onPressed: () {
+
+                      Container(
+                        height: 40,
+                        width: 70,
+                        alignment: Alignment.centerLeft,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFFF8A65),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(5),
+                          ),
+                        ),
+                        child: SizedBox.expand(
+                          child: FlatButton(
+                            child: Text(
+                              "Sair",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            onPressed: () {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Inicio(),
+                                builder: (context) => Sair(),
                               ),
                             );
                             },
-        ),
-        SizedBox(
-                        width: 80,
+                          ),
+                          
+                        ),
+                        
+                      ),
+                 SizedBox(
+                        width: 70,
                       ),
         IconButton(
           icon: Icon(Icons.arrow_forward),
@@ -256,7 +282,9 @@ class Geohumana7 extends StatelessWidget {
                             },
         ),
                     ],),
-                      ),
+                 
+                )
+
            ],
         ),
       ),

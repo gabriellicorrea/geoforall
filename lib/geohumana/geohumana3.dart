@@ -3,6 +3,7 @@ import 'package:teste/geohumana/geohumana4.dart';
 
 import '../inicio.dart';
 import '../sair.dart';
+import 'geohumana2.dart';
 
 class Geohumana3 extends StatelessWidget {
   @override
@@ -213,10 +214,31 @@ class Geohumana3 extends StatelessWidget {
                 ),
                  SizedBox(
                         height: 50,
+                      ),Container(
+                        child: Row(
+                    children: <Widget>[
+                                   SizedBox(
+                        width: 10,
                       ),
+        IconButton(
+          icon: Icon(Icons.arrow_back),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana2(),
+                              ),
+                            );
+                            },
+        ),
+        SizedBox(
+                        width: 65,
+                      ),
+
                       Container(
-                        height: 60,
-                        width: 80,
+                        height: 40,
+                        width: 70,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
                           color: Color(0xFFFF8A65),
@@ -248,6 +270,25 @@ class Geohumana3 extends StatelessWidget {
                         ),
                         
                       ),
+                 SizedBox(
+                        width: 70,
+                      ),
+        IconButton(
+          icon: Icon(Icons.arrow_forward),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana4(),
+                              ),
+                            );
+                            },
+        ),
+                    ],),
+                 
+                )
+
               ],
             )
           ],

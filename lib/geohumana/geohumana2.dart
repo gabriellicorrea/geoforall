@@ -279,7 +279,7 @@ class Geohumana2 extends StatelessWidget {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Geohumana2(),
+                                builder: (context) => Geohumana3(),
                               ),
                             );
                             },

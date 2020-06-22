@@ -101,7 +101,7 @@ class Geohumana5 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                        color: Color(0xFFFF8A65),
+                        color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -137,7 +137,7 @@ class Geohumana5 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Color(0xFFFF8A65),
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -175,7 +175,7 @@ class Geohumana5 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Color(0xFFFF8A65),
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -214,8 +214,30 @@ class Geohumana5 extends StatelessWidget {
                         height: 50,
                       ),
                       Container(
-                        height: 60,
-                        width: 80,
+                        child: Row(
+                    children: <Widget>[
+                                   SizedBox(
+                        width: 10,
+                      ),
+        IconButton(
+          icon: Icon(Icons.arrow_back),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana5(),
+                              ),
+                            );
+                            },
+        ),
+        SizedBox(
+                        width: 65,
+                      ),
+
+                      Container(
+                        height: 40,
+                        width: 70,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
                           color: Color(0xFFFF8A65),
@@ -247,6 +269,25 @@ class Geohumana5 extends StatelessWidget {
                         ),
                         
                       ),
+                 SizedBox(
+                        width: 70,
+                      ),
+        IconButton(
+          icon: Icon(Icons.arrow_forward),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana6(),
+                              ),
+                            );
+                            },
+        ),
+                    ],),
+                 
+                )
+
               ],
             )
           ],

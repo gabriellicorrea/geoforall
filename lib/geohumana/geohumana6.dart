@@ -3,6 +3,7 @@ import 'package:teste/geohumana/geohumana7.dart';
 
 import '../inicio.dart';
 import '../sair.dart';
+import 'geohumana5.dart';
 
 class Geohumana6 extends StatelessWidget {
   @override
@@ -214,9 +215,32 @@ class Geohumana6 extends StatelessWidget {
                                    SizedBox(
                         height: 50,
                       ),
-                     Container(
-                        height: 60,
-                        width: 80,
+                    
+                      Container(
+                        child: Row(
+                    children: <Widget>[
+                                   SizedBox(
+                        width: 10,
+                      ),
+        IconButton(
+          icon: Icon(Icons.arrow_back),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana5(),
+                              ),
+                            );
+                            },
+        ),
+        SizedBox(
+                        width: 65,
+                      ),
+
+                      Container(
+                        height: 40,
+                        width: 70,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
                           color: Color(0xFFFF8A65),
@@ -248,6 +272,24 @@ class Geohumana6 extends StatelessWidget {
                         ),
                         
                       ),
+                 SizedBox(
+                        width: 70,
+                      ),
+        IconButton(
+          icon: Icon(Icons.arrow_forward),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana7(),
+                              ),
+                            );
+                            },
+        ),
+                    ],),
+                 
+                )
               ],
             )
           ],
