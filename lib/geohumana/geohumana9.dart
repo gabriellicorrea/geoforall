@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../inicio.dart';
+import '../sair.dart';
 import 'geohumana10.dart';
 
 class Geohumana9 extends StatelessWidget {
@@ -200,9 +201,43 @@ class Geohumana9 extends StatelessWidget {
                     ],
                   ),
                 ),
-                  SizedBox(
-                    height: 20,
-                )
+                                   SizedBox(
+                        height: 50,
+                      ),
+                      Container(
+                        height: 60,
+                        width: 80,
+                        alignment: Alignment.centerLeft,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFFF8A65),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(5),
+                          ),
+                        ),
+                        child: SizedBox.expand(
+                          child: FlatButton(
+                            child: Text(
+                              "Sair",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Sair(),
+                              ),
+                            );
+                            },
+                          ),
+                          
+                        ),
+                        
+                      ),
               ],
             )
           ],

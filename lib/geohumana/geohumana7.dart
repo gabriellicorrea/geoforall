@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:teste/geohumana/geohumana8.dart';
 
 import '../inicio.dart';
+import '../sair.dart';
 
 class Geohumana7 extends StatelessWidget {
   @override
@@ -11,7 +12,7 @@ class Geohumana7 extends StatelessWidget {
         backgroundColor: Colors.white,
         automaticallyImplyLeading: true,
         leading: IconButton(
-          icon: Icon(Icons.home),
+          icon: Icon(Icons.arrow_back),
           color: Colors.black38,
            onPressed: () {
                               Navigator.push(
@@ -28,17 +29,24 @@ class Geohumana7 extends StatelessWidget {
         color: Colors.white,
         child: ListView(
           children: <Widget>[
-            Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Container(
+           Container(
                   child: Column(
                     children: <Widget>[
-                       SizedBox(
-                        width: 200,
-                        height: 200,
-                        child: Image.asset("images/geoo.JPG"),
-                      ),
+                SizedBox(
+                height: 70,
+              ),
+            Text(
+                  "Geo For All",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFFF7043),
+                    fontSize: 50,
+                  ),
+                  textAlign: TextAlign.center,
+                  ),
+              SizedBox(
+                height: 20,
+              ),
                       Text(
                         "7. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
                         style: TextStyle(
@@ -53,7 +61,7 @@ class Geohumana7 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -91,7 +99,7 @@ class Geohumana7 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -127,7 +135,7 @@ class Geohumana7 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -165,7 +173,7 @@ class Geohumana7 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -194,18 +202,62 @@ class Geohumana7 extends StatelessWidget {
                         ),
                         
                       ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                    ],
-                  ),
-                ),
-                  SizedBox(
-                    height: 20,
-                )
+                    
               ],
             )
-          ],
+           ),
+                         SizedBox(
+                        height: 10,
+                      ),
+                     
+                      Container(
+                        child: Row(
+                    children: <Widget>[
+                          IconButton(
+          icon: Icon(Icons.arrow_back),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana8(),
+                              ),
+                            );
+                            },
+        ),
+        SizedBox(
+                        width: 80,
+                      ),
+                        IconButton(
+          icon: Icon(Icons.power_settings_new),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Inicio(),
+                              ),
+                            );
+                            },
+        ),
+        SizedBox(
+                        width: 80,
+                      ),
+        IconButton(
+          icon: Icon(Icons.arrow_forward),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana8(),
+                              ),
+                            );
+                            },
+        ),
+                    ],),
+                      ),
+           ],
         ),
       ),
     );

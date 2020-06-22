@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:teste/geohumana/geohumana9.dart';
 
 import '../inicio.dart';
+import '../sair.dart';
 
 class Geohumana8 extends StatelessWidget {
   @override
@@ -40,7 +41,7 @@ class Geohumana8 extends StatelessWidget {
                         child: Image.asset("images/geoo.JPG"),
                       ),
                       Text(
-                        "8. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -53,7 +54,7 @@ class Geohumana8 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFF8A65),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -91,7 +92,7 @@ class Geohumana8 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFF8A65),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -127,7 +128,7 @@ class Geohumana8 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFF8A65),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -200,9 +201,43 @@ class Geohumana8 extends StatelessWidget {
                     ],
                   ),
                 ),
-                  SizedBox(
-                    height: 20,
-                )
+                                   SizedBox(
+                        height: 50,
+                      ),
+                     Container(
+                        height: 60,
+                        width: 80,
+                        alignment: Alignment.centerLeft,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFFF8A65),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(5),
+                          ),
+                        ),
+                        child: SizedBox.expand(
+                          child: FlatButton(
+                            child: Text(
+                              "Sair",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Sair(),
+                              ),
+                            );
+                            },
+                          ),
+                          
+                        ),
+                        
+                      ),
               ],
             )
           ],

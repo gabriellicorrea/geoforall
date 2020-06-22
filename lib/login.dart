@@ -142,7 +142,7 @@ class _LoginState extends State<Login> {
                 alignment: Alignment.center,
                 child: FlatButton(
                   child: Text(
-                    "Esqueci minha senha.",
+                    "Esqueci minha senha",
                     style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.black,

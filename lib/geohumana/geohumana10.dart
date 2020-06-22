@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:teste/inicio.dart';
 
 import '../fim.dart';
+import '../inicio.dart';
 
 
 class Geohumana10 extends StatelessWidget {
@@ -14,7 +14,7 @@ class Geohumana10 extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.home),
           color: Colors.black38,
-         onPressed: () {
+           onPressed: () {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -41,7 +41,7 @@ class Geohumana10 extends StatelessWidget {
                         child: Image.asset("images/geoo.JPG"),
                       ),
                       Text(
-                        "10. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "9. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -201,9 +201,43 @@ class Geohumana10 extends StatelessWidget {
                     ],
                   ),
                 ),
-                  SizedBox(
-                    height: 20,
-                )
+                                   SizedBox(
+                        height: 50,
+                      ),
+                      Container(
+                        height: 60,
+                        width: 80,
+                        alignment: Alignment.centerLeft,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFFF8A65),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(5),
+                          ),
+                        ),
+                        child: SizedBox.expand(
+                          child: FlatButton(
+                            child: Text(
+                              "Sair",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Fim(),
+                              ),
+                            );
+                            },
+                          ),
+                          
+                        ),
+                        
+                      ),
               ],
             )
           ],

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:teste/geohumana/geohumana1.dart';
 
 import '../inicio.dart';
+import '../sair.dart';
 import 'geohumana3.dart';
 
 class Geohumana2 extends StatelessWidget {
@@ -35,10 +37,20 @@ class Geohumana2 extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                        SizedBox(
-                        width: 200,
-                        height: 200,
-                        child: Image.asset("images/geoo.JPG"),
-                      ),
+                height: 70,
+              ),
+            Text(
+                  "Geo For All",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFFF7043),
+                    fontSize: 50,
+                  ),
+                  textAlign: TextAlign.center,
+                  ),
+              SizedBox(
+                height: 20,
+              ),
                       Text(
                         "2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
                         style: TextStyle(
@@ -47,13 +59,13 @@ class Geohumana2 extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 20,
                       ),
                       Container(
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                           color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -91,7 +103,7 @@ class Geohumana2 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                           color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -127,7 +139,7 @@ class Geohumana2 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                           color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -165,7 +177,7 @@ class Geohumana2 extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                           color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -194,15 +206,88 @@ class Geohumana2 extends StatelessWidget {
                         ),
                         
                       ),
+                      
                       SizedBox(
-                        height: 10,
+                        height: 50,
                       ),
                     ],
                   ),
                 ),
-                  SizedBox(
-                    height: 20,
+                Container(
+                        child: Row(
+                    children: <Widget>[
+                                   SizedBox(
+                        width: 10,
+                      ),
+        IconButton(
+          icon: Icon(Icons.arrow_back),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana1(),
+                              ),
+                            );
+                            },
+        ),
+        SizedBox(
+                        width: 65,
+                      ),
+
+                      Container(
+                        height: 40,
+                        width: 70,
+                        alignment: Alignment.centerLeft,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFFF8A65),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(5),
+                          ),
+                        ),
+                        child: SizedBox.expand(
+                          child: FlatButton(
+                            child: Text(
+                              "Sair",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Sair(),
+                              ),
+                            );
+                            },
+                          ),
+                          
+                        ),
+                        
+                      ),
+                 SizedBox(
+                        width: 70,
+                      ),
+        IconButton(
+          icon: Icon(Icons.arrow_forward),
+          color: Colors.black38,
+           onPressed: () {
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Geohumana2(),
+                              ),
+                            );
+                            },
+        ),
+                    ],),
+                 
                 )
+
               ],
             )
           ],
