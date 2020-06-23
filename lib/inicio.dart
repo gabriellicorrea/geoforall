@@ -83,7 +83,7 @@ class Inicio extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Geografia Humana",
+                              "Geografia Fisica",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -121,7 +121,7 @@ class Inicio extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Geografia Politica",
+                              "Geografia Humana",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

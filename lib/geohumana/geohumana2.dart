@@ -52,7 +52,7 @@ class Geohumana2 extends StatelessWidget {
                 height: 20,
               ),
                       Text(
-                        "2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "2. Qual é o maior deserto do planeta Terra?",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -73,7 +73,7 @@ class Geohumana2 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 1",
+                              "a) Deserto do Kalahari",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -111,7 +111,7 @@ class Geohumana2 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 2",
+                              "b) Deserto de Gobi",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -147,7 +147,7 @@ class Geohumana2 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 3",
+                              "c) Deserto do Saara",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -185,7 +185,7 @@ class Geohumana2 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 4",
+                              "d) Antártida",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

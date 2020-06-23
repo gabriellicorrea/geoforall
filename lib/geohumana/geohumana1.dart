@@ -52,7 +52,7 @@ class Geohumana1 extends StatelessWidget {
                 height: 20,
               ),
                       Text(
-                        "1.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "1. Qual maior rio do mundo em extensão e volume de água?",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -73,7 +73,7 @@ class Geohumana1 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 1",
+                              "a)	Rio Danúbio",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -111,7 +111,7 @@ class Geohumana1 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 2",
+                              "b)	Rio Amarelo",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -147,7 +147,7 @@ class Geohumana1 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 3",
+                              "c)	Rio Eufrates",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -185,7 +185,7 @@ class Geohumana1 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 4",
+                              "d)	Rio Amazonas",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
