@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:teste/geohumana/geohumana8.dart';
 
 import '../inicio.dart';
-import '../sair.dart';
+import '../login.dart';
 import 'geohumana10.dart';
 
 class Geohumana9 extends StatelessWidget {
@@ -52,7 +52,7 @@ class Geohumana9 extends StatelessWidget {
                 height: 20,
               ),
                       Text(
-                        "10. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "9. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -262,7 +262,7 @@ class Geohumana9 extends StatelessWidget {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Sair(),
+                                builder: (context) => Login(),
                               ),
                             );
                             },

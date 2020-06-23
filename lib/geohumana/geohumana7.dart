@@ -3,7 +3,7 @@ import 'package:teste/geohumana/geohumana6.dart';
 import 'package:teste/geohumana/geohumana8.dart';
 
 import '../inicio.dart';
-import '../sair.dart';
+import '../login.dart';
 
 class Geohumana7 extends StatelessWidget {
   @override
@@ -257,7 +257,7 @@ class Geohumana7 extends StatelessWidget {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Sair(),
+                                builder: (context) => Login(),
                               ),
                             );
                             },

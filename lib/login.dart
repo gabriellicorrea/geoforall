@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:teste/ajuda.dart';
 import 'package:teste/cadastro.dart';
 import 'package:teste/resetpassword.dart';
 
@@ -161,9 +162,7 @@ class _LoginState extends State<Login> {
                 ),
               ),
               
-              SizedBox(
-                height: 100,
-              ),
+              
               Container(
                 child: FlatButton(
                   child: Text(
@@ -185,7 +184,32 @@ class _LoginState extends State<Login> {
                   },
                 ),
               ),
-              
+              SizedBox(
+                height: 80,
+              ),
+              Container(
+                height: 40,
+                alignment: Alignment.center,
+                child: FlatButton(
+                  child: Text(
+                    "Ajuda",
+                    style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
+                    textAlign: TextAlign.right,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Ajuda(),
+                      ),
+                    );
+                  },
+                ),
+              ),
             ],
           ),
         ),

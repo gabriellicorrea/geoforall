@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:teste/geohumana/geohumana2.dart';
 import 'package:teste/geohumana/geohumana3.dart';
 
 import '../inicio.dart';
-import '../sair.dart';
+import '../login.dart';
 import 'geohumana5.dart';
 
 class Geohumana4 extends StatelessWidget {
@@ -261,7 +260,7 @@ class Geohumana4 extends StatelessWidget {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Sair(),
+                                builder: (context) => Login(),
                               ),
                             );
                             },

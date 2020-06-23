@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:teste/login.dart';
 
-class Cadastro extends StatelessWidget {
+
+
+
+class Ajuda extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,12 +25,11 @@ class Cadastro extends StatelessWidget {
         ),
       ),
       body: Container(
-        padding: EdgeInsets.only(top: 10, left: 40, right: 40),
+        padding: EdgeInsets.only(top: 50, left: 40, right: 40),
         color: Colors.white,
         child: ListView(
           children: <Widget>[
-          
-              SizedBox(
+            SizedBox(
                 height: 70,
               ),
             Text(
@@ -38,55 +41,26 @@ class Cadastro extends StatelessWidget {
                   ),
                   textAlign: TextAlign.center,
                   ),
-              
               SizedBox(
-                height: 70,
+                height: 20,
               ),
-            SizedBox(
-              height: 20,
+            Text(
+                        "Por favor, digite sua mensagem que entraremos em contato com voce.",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w400,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+ SizedBox(
+              height: 50,
             ),
             TextFormField(
               autofocus: true,
+              obscureText: false,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
-                labelText: "Nome",
-                labelStyle: TextStyle(
-                  color: Colors.black54,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 20,
-                ),
-              ),
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            TextFormField(
-              autofocus: true,
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                labelText: "Email",
-                labelStyle: TextStyle(
-                  color: Colors.black54,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 20,
-                ),
-              ),
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            TextFormField(
-              autofocus: true,
-              obscureText: true,
-              keyboardType: TextInputType.text,
-              decoration: InputDecoration(
-                labelText: "Senha",
+                labelText: "Digite sua mensagem.",
                 labelStyle: TextStyle(
                   color: Colors.black54,
                   fontWeight: FontWeight.w400,
@@ -103,7 +77,7 @@ class Cadastro extends StatelessWidget {
             Container(
               height: 60,
               decoration: BoxDecoration(
-                    color: Color(0xFFFF7043),
+                         color: Color(0xFFFFAB91),
                 borderRadius: BorderRadius.all(
                   Radius.circular(5),
                 ),
@@ -111,7 +85,7 @@ class Cadastro extends StatelessWidget {
               child: SizedBox.expand(
                 child: FlatButton(
                   child: Text(
-                    "Cadastrar",
+                    "Enviar",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
@@ -119,28 +93,26 @@ class Cadastro extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   onPressed: () {
-                    
                     return showDialog(
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          content: Text("Usuario cadastrado com sucesso!"),
+                          content: Text("Mensagem enviada com sucesso!"),
                         );
                       },
                     );
                   },
-                  
                 ),
               ),
             ),
             SizedBox(
-              height: 50,
+              height: 60,
             ),
             Container(
               height: 40,
               alignment: Alignment.center,
               child: FlatButton(
-                child: Text("Cancelar", textAlign: TextAlign.center,  style: TextStyle(
+                child: Text("Cancelar", textAlign: TextAlign.center, style: TextStyle(
                       
                       fontSize: 22,
                     ),),
@@ -155,8 +127,7 @@ class Cadastro extends StatelessWidget {
               ),
             ),
           ],
-        ),
-      ),
+        ),      ),
     );
   }
 }

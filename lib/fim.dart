@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:teste/geohumana/geohumana10.dart';
 import 'package:teste/inicio.dart';
+import 'package:teste/login.dart';
 
-import 'sair.dart';
 
 class Fim extends StatelessWidget {
   @override
@@ -35,7 +35,18 @@ class Fim extends StatelessWidget {
                 Container(
                   child: Column(
                     children: <Widget>[
-                      
+                              SizedBox(
+                height: 10,
+              ),
+            Text(
+                  "Geo For All",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFFF7043),
+                    fontSize: 30,
+                  ),
+                  textAlign: TextAlign.center,
+                  ),
                       Text(
                         "Resultado",
                         style: TextStyle(
@@ -367,7 +378,7 @@ class Fim extends StatelessWidget {
                         
                       ),
                                       SizedBox(
-                        height: 50,
+                        height: 30,
                       ),
                       Container(
                         child: Row(
@@ -416,7 +427,7 @@ class Fim extends StatelessWidget {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Sair(),
+                                builder: (context) => Login(),
                               ),
                             );
                             },

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:teste/geopoli.dart';
-import 'package:teste/sair.dart';
+import 'package:teste/login.dart';
+
 
 import 'geohumana/geohumana1.dart';
 
@@ -14,7 +15,13 @@ class Inicio extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.home),
           color: Colors.black38,
-          onPressed: () => Navigator.pop(context, false),
+          onPressed: () {  Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Login(),
+                              ),
+          );
+  }
         ),
       ),
       body: Container(
@@ -164,7 +171,7 @@ class Inicio extends StatelessWidget {
                               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Sair(),
+                                builder: (context) => Login(),
                               ),
                             );
                             },

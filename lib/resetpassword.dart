@@ -21,14 +21,28 @@ class ResetPasswordPage extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+              
+              SizedBox(
+                height: 70,
+              ),
+            Text(
+                  "Geo For All",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFFF7043),
+                    fontSize: 50,
+                  ),
+                  textAlign: TextAlign.center,
+                  ),
+              
+              SizedBox(
+                height: 70,
+              ),
+
                 Container(
                   child: Column(
                     children: <Widget>[
-                      SizedBox(
-                        width: 200,
-                        height: 200,
-                        child: Image.asset("imagens/cadeado.jpg"),
-                      ),
+                      
                       SizedBox(
                         height: 20,
                       ),
@@ -76,7 +90,7 @@ class ResetPasswordPage extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Color(0xFFFFAB91),
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
