@@ -1,6 +1,5 @@
-# Quiz de Geo
-
-A new Flutter project.
+# Quiz 
+Aplicacao de um Quiz para a dciplina de Projeto de Prototipagem e Teste de Usabilidade.
 
 ## Getting Started
 
