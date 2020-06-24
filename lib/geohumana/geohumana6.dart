@@ -52,9 +52,9 @@ class Geohumana6 extends StatelessWidget {
                 height: 20,
               ),
                       Text(
-                        "6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "6.  A vegetação desse importante bioma (domínio) brasileiro pode ser subdividida em: Igapó, Várzea e Mata de terra firma. Trata-se do:",
                         style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 20,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -73,7 +73,7 @@ class Geohumana6 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 1",
+                              "a) Bioma Pantanal",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -111,7 +111,7 @@ class Geohumana6 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 2",
+                              "b) Bioma Cerrado",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -147,7 +147,7 @@ class Geohumana6 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 3",
+                              "c) Bioma Amazonico",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -185,7 +185,7 @@ class Geohumana6 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 4",
+                              "d) Bioma Mata Atlantica",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

@@ -52,7 +52,7 @@ class Geohumana4 extends StatelessWidget {
                 height: 20,
               ),
                       Text(
-                        "4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "4. Qual maior altitude do planeta",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -72,7 +72,7 @@ class Geohumana4 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 1",
+                              "a) Kilimanjaro", 
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -110,7 +110,7 @@ class Geohumana4 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 2",
+                              "b) Fugi",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -146,7 +146,7 @@ class Geohumana4 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 3",
+                              " c) Monte Everest",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -184,7 +184,7 @@ class Geohumana4 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 4",
+                              " d) Aconcagua",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

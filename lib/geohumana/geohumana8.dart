@@ -51,7 +51,7 @@ class Geohumana8 extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),       Text(
-                        "8. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "8.  Quais são os pontos cardeais na orientação na rosa dos ventos:",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -72,8 +72,7 @@ class Geohumana8 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 1",
-                              style: TextStyle(
+                             "  a) norte, sul, leste, oeste" ,                              style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                                 fontSize: 20,
@@ -110,7 +109,7 @@ class Geohumana8 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 2",
+                              "b) norte, sudoeste, leste, oeste",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -146,7 +145,7 @@ class Geohumana8 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 3",
+                              "c) nordeste, sul, leste, noroeste",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -185,7 +184,7 @@ class Geohumana8 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 4",
+                              "d) norte, sudeste, leste, oeste",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

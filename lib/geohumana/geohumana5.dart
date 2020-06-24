@@ -51,9 +51,9 @@ class Geohumana5 extends StatelessWidget {
                 height: 20,
               ),
                       Text(
-                        "5.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "5.A movimentação das placas tectônicas libera uma enorme quantidade de energia para a superfície, ocasionando os terremotos. A intensidade dos terremotos é medida por meio da:",
                         style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 16,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -62,7 +62,7 @@ class Geohumana5 extends StatelessWidget {
                       ),
                       Container(
                         height: 60,
-                        alignment: Alignment.centerLeft,
+                        alignment: Alignment.center,
                         decoration: BoxDecoration(
                            color: Color(0xFFFFAB91),                          borderRadius: BorderRadius.all(
                             Radius.circular(5),
@@ -71,7 +71,7 @@ class Geohumana5 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 1",
+                              "a) Escala de Mols",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -109,7 +109,7 @@ class Geohumana5 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 2",
+                              "b) Escala Richter",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -145,7 +145,7 @@ class Geohumana5 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 3",
+                              "c) Escala Saffir-Simpson",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -183,7 +183,7 @@ class Geohumana5 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 4",
+                              "d) Escala Fahrenheit",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

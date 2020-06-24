@@ -69,7 +69,7 @@ class Fim extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Acertou",
+                              "Resultado da Resposta 1",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -102,7 +102,7 @@ class Fim extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Errou",
+                              "Resultado da Resposta 2",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -133,7 +133,7 @@ class Fim extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Acertou",
+                              "Resultado da Resposta 3",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -166,7 +166,7 @@ class Fim extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Errou",
+                              "Resultado da Resposta 4",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -201,7 +201,7 @@ class Fim extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Acertou",
+                              "Resultado da Resposta 5",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -233,7 +233,7 @@ class Fim extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Acertou",
+                              "Resultado da Resposta 6",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -265,7 +265,7 @@ class Fim extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Errou",
+                              "Resultado da Resposta 7",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -297,7 +297,7 @@ class Fim extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Acertou",
+                              "Resultado da Resposta 8",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -329,7 +329,7 @@ class Fim extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Errou",
+                              "Resultado da Resposta 9",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -361,7 +361,7 @@ class Fim extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Acertou",
+                              "Resultado da Resposta 10",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

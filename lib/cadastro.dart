@@ -103,7 +103,7 @@ class Cadastro extends StatelessWidget {
             Container(
               height: 60,
               decoration: BoxDecoration(
-                    color: Color(0xFFFF7043),
+                           color: Color(0xFFFFAB91),
                 borderRadius: BorderRadius.all(
                   Radius.circular(5),
                 ),

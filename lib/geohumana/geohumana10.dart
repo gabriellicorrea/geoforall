@@ -53,7 +53,7 @@ class Geohumana10 extends StatelessWidget {
                 height: 20,
               ),
                       Text(
-                        "10. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "10. Os “pedaços” pelos quais se dividem a crosta terrestre são chamados de:",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -74,7 +74,7 @@ class Geohumana10 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 1",
+                              "a) terras emersas",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -112,7 +112,7 @@ class Geohumana10 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 2",
+                              "b) regiões continentais",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -148,7 +148,7 @@ class Geohumana10 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 3",
+                              "c) estratificações rochosas",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -186,7 +186,7 @@ class Geohumana10 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 4",
+                              "d) placas tectônicas",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

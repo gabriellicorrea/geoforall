@@ -52,7 +52,7 @@ class Geohumana9 extends StatelessWidget {
                 height: 20,
               ),
                       Text(
-                        "9. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "9. Com base em suas composições, a crosta pode ser dividida em dois tipos, a saber: ",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -73,7 +73,7 @@ class Geohumana9 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 1",
+                              "a) camada sima e camada sial",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -111,7 +111,7 @@ class Geohumana9 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 2",
+                              "b) continental e oceânica",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -147,7 +147,7 @@ class Geohumana9 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 3",
+                              "c) rochosa e mineral",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -185,7 +185,7 @@ class Geohumana9 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 4",
+                              "d) litosfera e astenosfera",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

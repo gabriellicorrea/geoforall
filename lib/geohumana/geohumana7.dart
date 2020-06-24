@@ -49,7 +49,7 @@ class Geohumana7 extends StatelessWidget {
                 height: 20,
               ),
                       Text(
-                        "7. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "7. Quais são os seis grandes continentes planeta Terra:",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -59,7 +59,7 @@ class Geohumana7 extends StatelessWidget {
                         height: 10,
                       ),
                       Container(
-                        height: 60,
+                        height: 70,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
                           color: Color(0xFFFFAB91),
@@ -70,7 +70,7 @@ class Geohumana7 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 1",
+                              "a) África, Ásia, Europa, Oceania, América e Antártida",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -97,7 +97,7 @@ class Geohumana7 extends StatelessWidget {
                       ),
 
                       Container(
-                        height: 60,
+                        height: 70,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
                           color: Color(0xFFFFAB91),
@@ -108,7 +108,7 @@ class Geohumana7 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 2",
+                              "b) África, Setentrional, Oceania, Austral, América e Antártida",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -133,7 +133,7 @@ class Geohumana7 extends StatelessWidget {
                         height: 10,
                       ),
                       Container(
-                        height: 60,
+                        height: 70,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
                           color: Color(0xFFFFAB91),
@@ -144,7 +144,7 @@ class Geohumana7 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 3",
+                              "c) África, Ártico, Setentrional, Austral, América e Antártida",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -171,7 +171,7 @@ class Geohumana7 extends StatelessWidget {
                       ),
 
                       Container(
-                        height: 60,
+                        height: 70,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
                           color: Color(0xFFFFAB91),
@@ -182,7 +182,7 @@ class Geohumana7 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 4",
+                              "c) África, Ártico, Setentrional, Austral, América e Antártida",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

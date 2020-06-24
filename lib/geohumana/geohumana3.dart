@@ -52,7 +52,7 @@ class Geohumana3 extends StatelessWidget {
                 height: 20,
               ),
                       Text(
-                        "3.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        "3.Qual maior vulcão ativo na atualidade",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
@@ -73,7 +73,7 @@ class Geohumana3 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 1",
+                              "a) Etna",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -111,7 +111,7 @@ class Geohumana3 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 2",
+                              "b) Kilauea",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -147,7 +147,7 @@ class Geohumana3 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 3",
+                              "c) Santa Helena",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -185,7 +185,7 @@ class Geohumana3 extends StatelessWidget {
                         child: SizedBox.expand(
                           child: FlatButton(
                             child: Text(
-                              "Alternativa 4",
+                              "d) Tungurahua",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
