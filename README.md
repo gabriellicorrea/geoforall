@@ -1,4 +1,4 @@
-# Quiz
+# Quiz de Geo
 
 A new Flutter project.
 
