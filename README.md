@@ -1,5 +1,5 @@
 # Quiz 
-Aplicacao de um Quiz para a dciplina de Projeto de Prototipagem e Teste de Usabilidade.
+Aplicacao de um Quiz para a diciplina de Projeto de Prototipagem e Teste de Usabilidade.
 
 ## Getting Started
 
